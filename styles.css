@@ -1,0 +1,254 @@
+body, html {
+    background: #E6E6E6;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: black;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    color: white;
+    /* text-shadow: mediumspringgreen 0px 0px 1px,   mediumspringgreen 0px 0px 1px,   mediumspringgreen 0px 0px 1px,
+    mediumspringgreen 0px 0px 1px,   mediumspringgreen 0px 0px 1px,   mediumspringgreen 0px 0px 1px; */
+}
+
+.navbar-brand:hover {
+    color: #ffeeba;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #ffeeba;
+}
+
+.searchBtn {
+    border: 1px solid white;
+    background: black;
+    color: white;
+}
+
+.searchBtn:hover {
+    background: mediumspringgreen;
+    color: black;
+    border: 1px solid mediumspringgreen;
+}
+
+.navbar-brand, .nav-link, .searchBtn, .alert, .card, .skills-title, .js-skill, .mm-title, .contact-card {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.card {
+    background: linear-gradient(to left, #E6E6E6, white,#E6E6E6);
+    border: none;
+}
+
+.brackets {
+    color: mediumspringgreen;
+}
+
+.alert {
+    color: black;
+}
+
+.hamburgerBtn {
+    background: white;
+    opacity: 0.2;
+}
+
+.sectionTitle {
+    font-size: 25px;
+}
+
+#navbar-icon {
+    color: white;
+    margin-left: 3px;
+}
+
+#nav-toggler-icon {
+    color: white;
+    font-size: 25px;
+}
+
+#title-icon {
+    font-size: 28px;
+}
+
+.title-icon-div {
+    margin-top: 10px;
+}
+
+.search-form {
+    display: none;
+}
+
+#progress1 {
+    margin-top: 10px;
+    background: transparent;
+}
+
+.skill-set {
+    margin: 10px 1em 10px 1em;
+}
+
+.code-icon {
+    font-size: 20px;
+}
+
+.alert-box {
+    margin: 4em 0 0 0;
+    background: linear-gradient(45deg, fuchsia, #CC0034);
+    color: white;
+    border-radius: 0;
+}
+
+.alert-box1 {
+    background: linear-gradient(45deg,#CC0034, fuchsia);
+    color: ghostwhite;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.click-here {
+    /* color: #38FFF1; */
+    color: black;
+}
+
+.progress-bar {
+    background: linear-gradient(to right, black, black, black, #E6E6E6);
+    color: #ffeeba;
+}
+
+.col-spacer-skills {
+    padding: 1em 1em 1em 1em;
+}
+
+.row1 {
+    background: white;
+    margin: 1em 1em 1em 1em;
+    border-radius: 10px;
+}
+
+.skills-title {
+    font-size: 30px;
+    background: black;
+    text-align: center;
+    color: #ffeeba;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+.stars {
+    color: #ffeeba;
+}
+
+.mm-title {
+    margin: 30px 1em 30px 1em;
+    padding: 1em 2em 1em 2em;
+    color: white;
+    font-size: 32px;
+    border-radius: 10px;
+    /* background: linear-gradient(45deg, red, blue); */
+    background: #CC0034;
+    -webkit-box-shadow: 10px 10px 22px -2px rgba(66,66,65,0.77);
+    -moz-box-shadow: 10px 10px 22px -2px rgba(66,66,65,0.77);
+    box-shadow: 10px 10px 22px -2px rgba(66,66,65,0.77);
+}
+
+.row2 {
+    margin: 1em 0 0 0;
+    background: white;
+}
+
+.mm-click-instruct {
+    font-size: 20px;
+}
+
+.col-spacer-row2 {
+    /* background: linear-gradient(45deg, red, blue); */
+    background-repeat: repeat;
+    background-size: 250px;
+    border-radius: 10px;
+}
+
+
+.row3 {
+    padding: 2em 2em 2em 2em;
+    background: ghostwhite;
+    opacity: 0.9;
+}
+
+.preview-img {
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.row4 {
+    margin: 0 0 0 0;
+    padding: 10px 0 10px 0;
+    background: white;
+}
+
+.city {
+    font-size: 20px;
+}
+
+.weather {
+    font-size: 20px;
+}
+
+.example-text {
+    padding: 10px 0 0 0;
+}
+
+#social-icon {
+    color: fuchsia;
+    padding: 0 5px 0 5px;
+    font-size: 20px;
+}
+
+#social-icon-contact {
+    color: #CC0034;
+    padding: 0 5px 0 5px;
+    font-size: 20px;
+}
+
+.contact-row {
+    padding: 1em 1em 1em 1em;
+    font-size: 20px;
+}
+
+.contact-card {
+    background: white;
+    border-radius: 10px;
+}
+
+.contact-title, .contact-card-property, .footer-box {
+    font-family: sans-serif;
+}
+
+.contact-form {
+    color: dodgerblue;
+}
+
+.c-paragraph {
+    margin-top: 20px;
+}
+
+.footer-box {
+    background: black;
+    color: ghostwhite;
+    border-radius: 0;
+}
+
+.footer-row {
+    margin: 0 0 3.5em 0;
+}
+
+
