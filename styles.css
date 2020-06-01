@@ -252,7 +252,7 @@ body, html {
 }
 @media (min-width: 300px) { 
     .alert-box {
-        margin-top: 4em;
+        margin-top: 3.8em;
     }
 
     #social-icon {
@@ -265,7 +265,7 @@ body, html {
     }
 
     .footer-row {
-        margin: 0 0 3.8em 0;
+        margin: 0 0 3.7em 0;
     }
 
     .city, .weather {
