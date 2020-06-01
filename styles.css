@@ -271,6 +271,10 @@ body, html {
     .city, .weather {
         font-size: 18px;
     }
+
+    .mm-title {
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 400px) { 
@@ -284,6 +288,10 @@ body, html {
 
     .footer-row {
         margin: 0 0 3.5em 0;
+    }
+
+    .mm-title {
+        font-size: 30px;
     }
 }
 
