@@ -250,5 +250,40 @@ body, html {
 .footer-row {
     margin: 0 0 3.5em 0;
 }
+@media (min-width: 300px) { 
+    .alert-box {
+        margin-top: 4em;
+    }
 
+    #social-icon {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .ig {
+        padding-left: 10px;
+    }
+
+    .footer-row {
+        margin: 0 0 3.8em 0;
+    }
+
+    .city, .weather {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 400px) { 
+    .alert-box {
+        margin-top: 4em;
+    }
+
+    #social-icon {
+        padding: 0 0 0 10px;
+    }
+
+    .footer-row {
+        margin: 0 0 3.5em 0;
+    }
+}
 
