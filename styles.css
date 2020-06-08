@@ -1,16 +1,16 @@
 body, html {
-    background: #E6E6E6;
+    background: #FFFFFF;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
 
 .navbar {
-    background: black;
+    background: #3B5998;
 }
 
 .navbar-brand {
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     /* text-shadow: mediumspringgreen 0px 0px 1px,   mediumspringgreen 0px 0px 1px,   mediumspringgreen 0px 0px 1px,
     mediumspringgreen 0px 0px 1px,   mediumspringgreen 0px 0px 1px,   mediumspringgreen 0px 0px 1px; */
@@ -22,6 +22,7 @@ body, html {
 
 .nav-link {
     color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .nav-link:hover {
@@ -44,9 +45,22 @@ body, html {
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
-.card {
+.project-card {
     background: linear-gradient(to left, #E6E6E6, white,#E6E6E6);
-    border: none;
+    border: 1px solid #F7F7F7;
+    padding-right: 1em;
+    padding-left: 1em;
+    background: white;
+    box-shadow: 0 10px 10px -5px #3B5998;
+    border-radius: 30px;
+}
+
+#first-row-links {
+    margin: 0 1em 1.5em 1em;
+}
+
+#second-row-links {
+    margin: 0 1em 0 1em;
 }
 
 .brackets {
@@ -63,7 +77,8 @@ body, html {
 }
 
 .sectionTitle {
-    font-size: 25px;
+    font-size: 20px;
+    color: black;
 }
 
 #navbar-icon {
@@ -78,6 +93,7 @@ body, html {
 
 #title-icon {
     font-size: 28px;
+    color: black;
 }
 
 .title-icon-div {
@@ -104,44 +120,53 @@ body, html {
 .alert-box {
     margin: 4em 0 0 0;
     background: linear-gradient(45deg, fuchsia, #CC0034);
-    color: white;
+    color: black;
     border-radius: 0;
+    background: ghostwhite;
+    /* font-family: 'Open Sans Condensed', sans-serif; */
 }
 
 .alert-box1 {
     background: linear-gradient(45deg,#CC0034, fuchsia);
-    color: ghostwhite;
-    border-radius: 10px;
+    color: #DFE3EE;
+    border-radius: 30px;
     margin: 0;
+    background: #3B5998;
+    border: 1px solid #3B5998;
 }
 
 .click-here {
     /* color: #38FFF1; */
-    color: black;
+    color: #3B5998;
 }
 
 .progress-bar {
     background: linear-gradient(to right, black, black, black, #E6E6E6);
-    color: #ffeeba;
+    background: #8B9DC3;
+    color: #DFE3EE;
 }
 
 .col-spacer-skills {
     padding: 1em 1em 1em 1em;
+    border: 1px solid #F7F7F7;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px #3B5998;
 }
 
 .row1 {
     background: white;
-    margin: 1em 1em 1em 1em;
-    border-radius: 10px;
+    margin: 1.5em 2em 1.5em 2em;
+    /* border-radius: 10px; */
 }
 
 .skills-title {
     font-size: 30px;
-    background: black;
-    text-align: center;
-    color: #ffeeba;
+    text-align: left;
+    color: #3B5998;
     padding-top: 5px;
+    margin-left: 0.5em;
     border-radius: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .stars {
@@ -151,18 +176,19 @@ body, html {
 .mm-title {
     margin: 30px 1em 30px 1em;
     padding: 1em 2em 1em 2em;
-    color: white;
+    color: ghostwhite;
     font-size: 32px;
     border-radius: 10px;
     /* background: linear-gradient(45deg, red, blue); */
-    background: #CC0034;
+    background: #8B9DC3;
+    background: #3B5998;
     -webkit-box-shadow: 10px 10px 22px -2px rgba(66,66,65,0.77);
     -moz-box-shadow: 10px 10px 22px -2px rgba(66,66,65,0.77);
     box-shadow: 10px 10px 22px -2px rgba(66,66,65,0.77);
 }
 
 .row2 {
-    margin: 1em 0 0 0;
+    margin: 1.5em 0 0 0;
     background: white;
 }
 
@@ -192,7 +218,7 @@ body, html {
 .row4 {
     margin: 0 0 0 0;
     padding: 10px 0 10px 0;
-    background: white;
+    background: #8B9DC3;
 }
 
 .city {
@@ -208,29 +234,32 @@ body, html {
 }
 
 #social-icon {
-    color: fuchsia;
+    color: #DFE3EE;
     padding: 0 5px 0 5px;
     font-size: 20px;
 }
 
 #social-icon-contact {
-    color: #CC0034;
+    color: #8B9DC3;
     padding: 0 5px 0 5px;
     font-size: 20px;
 }
 
 .contact-row {
-    padding: 1em 1em 1em 1em;
+    padding: 1.5em 1em 1.5em 1em;
     font-size: 20px;
+    margin: 2em 0 1.5em;
 }
 
 .contact-card {
     background: white;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border: 1px solid #F7F7F7;
+    box-shadow: 0 0 40px #3B5998;
 }
 
-.contact-title, .contact-card-property, .footer-box {
-    font-family: sans-serif;
+.contact-title, .contact-card-property, .footer-box, .navbar-brand {
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .contact-form {
@@ -242,17 +271,26 @@ body, html {
 }
 
 .footer-box {
-    background: black;
-    color: ghostwhite;
+    background: #3B5998;
+    color: #8B9DC3;
     border-radius: 0;
 }
 
 .footer-row {
     margin: 0 0 3.5em 0;
 }
+
+.blogs {
+    color: ghostwhite;
+}
+
+#weather-icon {
+    margin-left: 10px;
+}
+
 @media (min-width: 300px) { 
     .alert-box {
-        margin-top: 3.8em;
+        margin-top: 3.4em;
     }
 
     #social-icon {
@@ -275,11 +313,18 @@ body, html {
     .mm-title {
         font-size: 20px;
     }
+    .contact-row {
+        margin: 1em 0;
+    }
+
+    .alert {
+        /* margin-bottom: 30px; */
+    }
 }
 
 @media (min-width: 400px) { 
     .alert-box {
-        margin-top: 4em;
+        margin-top: 3.5em;
     }
 
     #social-icon {
@@ -292,6 +337,9 @@ body, html {
 
     .mm-title {
         font-size: 30px;
+    }
+    .contact-row {
+        margin: 2em 0 1.5em 0;
     }
 }
 
