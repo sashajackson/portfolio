@@ -133,6 +133,7 @@ body, html {
     margin: 0;
     background: #3B5998;
     border: 1px solid #3B5998;
+    padding: 0 20px 0 20px;
 }
 
 .click-here {
@@ -277,7 +278,7 @@ body, html {
 }
 
 .footer-row {
-    margin: 0 0 3.5em 0;
+    margin: 0 0 2em 0;
 }
 
 .blogs {
@@ -302,9 +303,9 @@ body, html {
         padding-left: 10px;
     }
 
-    .footer-row {
+    /* .footer-row {
         margin: 0 0 3.7em 0;
-    }
+    } */
 
     .city, .weather {
         font-size: 18px;
@@ -331,9 +332,9 @@ body, html {
         padding: 0 0 0 10px;
     }
 
-    .footer-row {
+    /* .footer-row {
         margin: 0 0 3.5em 0;
-    }
+    } */
 
     .mm-title {
         font-size: 30px;
