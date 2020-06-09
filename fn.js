@@ -6,6 +6,7 @@ let flag = false;
 let qCounter = 0;
 let eCounter = 0;
 let wthr;
+let menuDrop = true;
 
 //jquery events
 /* JQUERY START */
@@ -13,15 +14,17 @@ let wthr;
 // when navbar mobile toggle is clicked
 $(toggleBtnJQ).on('click', () => {
 
-    let classes = toggleBtnVJ.classList.contains('fal fa-chevron-double-down');
+    let classes = toggleBtnVJ.classList.contains('ellipsis');
     console.log(classes);
 
-    if(toggleBtnVJ.classList.contains('fal fa-chevron-double-down')){
-        console.log('suppose to go up');
-        toggleBtnVJ.className = 'fal fa-chevron-double-up';
-    } else {
-        toggleBtnVJ.className = 'fal fa-chevron-double-down';
+    if(menuDrop === true){
         console.log('suppose to go down');
+        toggleBtnVJ.className = 'fad fa-caret-up';
+        menuDrop = false;
+    } else {
+        toggleBtnVJ.className = 'fad fa-caret-down';
+        console.log('suppose to go up');
+        menuDrop = true;
     }
 });
 

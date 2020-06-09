@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/15576e6bf0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+    <title>amj.projects</title>
+  </head>
+  <body>
+    <div class="container" id="main-projects">
+        <!-- nav -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="/index.html">Andre Jackson </a>
+            <div class="text-center">
+                <i class="fab fa-instagram" id="social-icon"></i> <i class="fab fa-medium-m icon" id="social-icon"></i> <i class="fab fa-linkedin-in icon" id="social-icon"></i> <i class="fab fa-github icon" id="social-icon"></i>
+            </div>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- <span class="navbar-toggler-icon"></span> -->
+              <i class="fad fa-caret-down" id="nav-toggler-icon"></i>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">About Me <i class="fal fa-id-card" id="navbar-icon"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Projects <i class="fal fa-project-diagram" id="navbar-icon"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Educational Blogs <i class="fal fa-comment-alt-lines" id="navbar-icon"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resume <i class="fal fa-file-alt" id="navbar-icon"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Community Service <i class="fal fa-users" id="navbar-icon"></i></a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li> -->
+              </ul>
+              <form class="form-inline my-2 my-lg-0 search-form">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn my-2 my-sm-0 searchBtn" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+          <!-- nav end-->
+
+          <div class="row" id="row-title">
+              <div class="col-12">
+                <p class="page-title text-center">Projects</p>
+                  <!-- <div class="row">
+                      <div class="col-3">
+                        <p class="page-title">Projects</p>
+                      </div>
+                      <div class="col-9"> -->
+                          <ul class="p-0 m-0 text-center" id="projects-ul">
+                              <li class="projects-categories all" id="all">all</li>
+                              <li class="projects-categories project-cats" id="bs">business</li>
+                              <li class="projects-categories project-cats" id="ec">eCommerce</li>
+                              <li class="projects-categories project-cats" id="ent">entertainment</li>
+                          <!-- </ul>
+                    </div>
+                  </div> -->
+                  <hr id="hr">
+              </div>
+          </div>
+          <div class="row projects-content-row">
+              
+          </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="/fb/fb.js"></script>
+    <script src="/js/projects.js"></script> 
+</body>
+</html>
