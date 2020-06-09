@@ -104,6 +104,7 @@ referenceEnt.once('value').then((snapshot) => {
         pBody.setAttribute('class', 'pBody');
         imgTag.setAttribute('src', '/images/trp.png');
         aDetails.setAttribute('href', '#');
+        pDetails.setAttribute('class', 'p-text');
         imgTag.setAttribute('class', 'img-fluid project-image');
         cardDiv.setAttribute('class', 'card projects-card');
         cardBody.setAttribute('class', 'card-body projects-card-body');

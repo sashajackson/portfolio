@@ -355,7 +355,8 @@ body, html {
 
 /* projects page */
 #row-title {
-    margin-top: 6em;
+    padding-top: 6em;
+    background: linear-gradient(white,white, #DFE3EE);
 }
 
 .page-title {
@@ -415,5 +416,18 @@ body, html {
 .pBody {
     font-family: sans-serif;
     margin-bottom: 10px;
+}
+
+.projects-card {
+    box-shadow: 0 0 10px #3B5998;
+    border-radius: 20px;
+}
+
+.p-text {
+    margin-bottom: 0;
+}
+
+#projects-body {
+    background: #DFE3EE;
 }
 
