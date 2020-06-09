@@ -3,6 +3,7 @@ body, html {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .navbar {
@@ -18,6 +19,10 @@ body, html {
 
 .navbar-brand:hover {
     color: #ffeeba;
+}
+
+.underline-nav {
+    border-bottom: 3px solid white;
 }
 
 .nav-link {
@@ -285,6 +290,7 @@ body, html {
     color: ghostwhite;
 }
 
+
 /* #weather-icon {
     margin-left: 10px;
 } */
@@ -355,7 +361,7 @@ body, html {
 
 /* projects page */
 #row-title {
-    padding-top: 6em;
+    padding-top: 5.5em;
     background: linear-gradient(white,white, #DFE3EE);
 }
 
@@ -416,6 +422,7 @@ body, html {
 .pBody {
     font-family: sans-serif;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .projects-card {
@@ -429,5 +436,15 @@ body, html {
 
 #projects-body {
     background: #DFE3EE;
+}
+
+.spec-details, .tech {
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tech {
+    font-weight: bold;
 }
 
