@@ -24,6 +24,10 @@ body, html {
     color: #ffeeba;
 }
 
+#brain {
+    color: lightpink;
+}
+
 .underline-nav {
     border-bottom: 3px solid white;
 }
@@ -49,7 +53,7 @@ body, html {
     border: 1px solid mediumspringgreen;
 }
 
-.navbar-brand, .nav-link, .searchBtn, .alert, .card, .skills-title, .js-skill, .mm-title, .contact-card {
+.navbar-brand, .nav-link, .searchBtn, .alert, .card, .skills-title, .js-skill, .mm-title, .contact-card, .css-change {
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
@@ -278,7 +282,7 @@ body, html {
 }
 
 .se-text {
-    color: white;
+    color: #8B9DC3;
 }
 
 .c-paragraph {
@@ -291,7 +295,7 @@ body, html {
 }
 
 .bs-title {
-    color: #F27272;
+    color: #ffeeba;
     font-size: 35px;
 }
 
@@ -318,6 +322,10 @@ body, html {
 } */
 
 @media (min-width: 300px) { 
+    .css-change {
+        font-size: 18px;
+    }
+
     .project-cats {
         padding-left: 20px;
         color: #3B5998;
@@ -366,6 +374,9 @@ body, html {
 }
 
 @media (min-width: 400px) { 
+    .css-change {
+        font-size: 20px;
+    }
     .alert-box {
         margin-top: 3.5em;
     }
