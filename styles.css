@@ -326,7 +326,7 @@ body, html {
         font-size: 20px;
     }
     .contact-row {
-        margin-bottom: 5.5em;
+        margin-bottom: 1.5em;
     }
 
     .alert {
@@ -355,7 +355,7 @@ body, html {
         font-size: 30px;
     }
     .contact-row {
-        margin: 1.5em 0 5em 0;
+        margin: 1.5em 0 1.5em 0;
     }
     .icon {
         padding-left: 20px !important;
