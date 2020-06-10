@@ -81,7 +81,6 @@ function populateData(typeBlog){
         let blogsv = document.getElementById('blogs-row');
         let typeArr = null;
         let filter = snap.filter(element => element.type === typeBlog);
-        console.log('this is filter: ', filter);
         if(typeBlog === ''){
            typeArr = snap.filter(elem => elem.type);
         } else if (filter.length === 0) {
@@ -89,14 +88,11 @@ function populateData(typeBlog){
         } else {
             typeArr = filter;
         } 
-
         blogsv.innerHTML = '';
         console.log(typeArr.length);
         typeArr.forEach(element => {
-            console.log('inside for each array length: ', typeArr.length);
             let arr = typeof typeArr[0];
             if(arr !== 'string'){
-                console.log('something to show');
                 //create elements
                 let col = document.createElement('div');
                 let cardDiv = document.createElement('div');
