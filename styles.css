@@ -1,8 +1,7 @@
 body, html {
     background: #FFFFFF;
     overflow-x: hidden;
-    overflow-y: scroll;
-    margin: 0 0 10em 0;
+    margin: 0;
     padding: 0;
     height: 100%;
     width:100%;
@@ -255,7 +254,7 @@ body, html {
 }
 
 .contact-row {
-    padding: 1.5em 1em 1.5em 1em;
+    /* padding: 1.5em 1em 1.5em 1em; */
     font-size: 20px;
     margin: 2em 0 1.5em;
 }
@@ -302,9 +301,6 @@ body, html {
 } */
 
 @media (min-width: 300px) { 
-    body, html {
-        height: 1000px;
-    }
     .alert-box {
         margin-top: 3.4em;
     }
