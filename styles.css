@@ -303,6 +303,16 @@ body, html {
 } */
 
 @media (min-width: 300px) { 
+    .project-cats {
+        padding-left: 20px;
+        color: #3B5998;
+        font-size: 10px;
+    }
+
+    /* .all {
+        font-size: 10px;
+    } */
+
     .alert-box {
         margin-top: 3.4em;
     }
@@ -361,6 +371,16 @@ body, html {
     }
     .icon {
         padding-left: 20px !important;
+    }
+
+    .project-cats {
+        padding-left: 20px;
+        color: #3B5998;
+        font-size: 16px;
+    }
+
+    .all {
+        font-size: 16px;
     }
 }
 
