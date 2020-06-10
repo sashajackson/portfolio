@@ -379,9 +379,9 @@ body, html {
     color: #8B9DC3;
 }
 
-#hr {
+/* #hr {
     margin-top: 5px;
-}
+} */
 
 .projects-categories {
     display: inline;
@@ -459,5 +459,29 @@ body, html {
     color: dodgerblue;
     margin-bottom: 0;
     font-family: sans-serif;
+}
+
+
+
+
+/* blogs page */
+#title-row {
+    padding-top: 5.5em;
+}
+
+@media (min-width: 300px){
+    .blogs-cats {
+        padding-left: 10px;
+        color: #3B5998;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 400px){
+    .blogs-cats {
+        padding: 10px;
+        color: #3B5998;
+        margin-bottom: 5px;
+    }
 }
 
