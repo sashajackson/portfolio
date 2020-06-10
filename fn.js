@@ -14,18 +14,13 @@ $(document).ready( () => {
     
     // when navbar mobile toggle is clicked
     $(toggleBtnJQ).on('click', () => {
-    
         let classes = toggleBtnVJ.classList.contains('ellipsis');
-        console.log(classes);
-    
-        if(menuDrop === true){
-            console.log('suppose to go down');
-            toggleBtnVJ.className = 'fad fa-caret-up';
-            menuDrop = false;
+        if(toggleBtnJQ.hasClass('fad fa-caret-up')){
+            toggleBtnVJ.className = '';
+            toggleBtnJQ.addClass('fad fa-caret-down');
         } else {
-            toggleBtnVJ.className = 'fad fa-caret-down';
-            console.log('suppose to go up');
-            menuDrop = true;
+            toggleBtnVJ.className = '';
+            toggleBtnJQ.addClass('fad fa-caret-up');
         }
     });
     
