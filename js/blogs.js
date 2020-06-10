@@ -89,7 +89,6 @@ function populateData(typeBlog){
             typeArr = filter;
         } 
         blogsv.innerHTML = '';
-        console.log(typeArr.length);
         typeArr.forEach(element => {
             let arr = typeof typeArr[0];
             if(arr !== 'string'){
