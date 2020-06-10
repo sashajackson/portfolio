@@ -306,6 +306,9 @@ body, html {
 } */
 
 @media (min-width: 300px) { 
+    body, html {
+        height: 1000px;
+    }
     .alert-box {
         margin-top: 3.4em;
     }
