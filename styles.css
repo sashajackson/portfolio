@@ -266,6 +266,7 @@ body, html {
     /* border-radius: 10px; */
     /* border: 1px solid #F7F7F7; */
     box-shadow: 0 0 40px #3B5998;
+    border: none;
 }
 
 .contact-title, .contact-card-property, .footer-box, .navbar-brand {
@@ -276,8 +277,22 @@ body, html {
     color: dodgerblue;
 }
 
+.se-text {
+    color: white;
+}
+
 .c-paragraph {
     margin-top: 20px;
+    color: ghostwhite;
+}
+
+#bs-card {
+    background: #3B5998;
+}
+
+.bs-title {
+    color: #F27272;
+    font-size: 35px;
 }
 
 .footer-box {
