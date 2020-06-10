@@ -4,6 +4,11 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    width:100%;
+}
+
+#main-container {
+    margin-bottom: 1em;
 }
 
 .navbar {
@@ -224,7 +229,7 @@ body, html {
 
 .row4 {
     margin: 0 0 0 0;
-    padding: 10px 0 10px 0;
+    padding: 0 0 10px 0;
     background: #8B9DC3;
 }
 
@@ -261,7 +266,7 @@ body, html {
 .contact-card {
     background: white;
     /* border-radius: 10px; */
-    border: 1px solid #F7F7F7;
+    /* border: 1px solid #F7F7F7; */
     box-shadow: 0 0 40px #3B5998;
 }
 
@@ -281,10 +286,13 @@ body, html {
     background: #3B5998;
     color: #8B9DC3;
     border-radius: 0;
+    padding: 0;
+    margin-bottom: 10px;
 }
 
 .footer-row {
-    margin: 0 0 2em 0;
+    /* margin: 0 0 2em 0; */
+    margin: 0;
 }
 
 .blogs {
@@ -322,7 +330,7 @@ body, html {
         font-size: 20px;
     }
     .contact-row {
-        margin: 1em 0;
+        margin-bottom: 5.5em;
     }
 
     .alert {
@@ -351,7 +359,7 @@ body, html {
         font-size: 30px;
     }
     .contact-row {
-        margin: 2em 0 1.5em 0;
+        margin: 1.5em 0 5em 0;
     }
     .icon {
         padding-left: 20px !important;
