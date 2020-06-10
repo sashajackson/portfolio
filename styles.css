@@ -449,3 +449,9 @@ body, html {
     font-weight: bold;
 }
 
+.more-details {
+    color: dodgerblue;
+    margin-bottom: 0;
+    font-family: sans-serif;
+}
+

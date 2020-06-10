@@ -114,16 +114,18 @@ function populateData(type){
             let cardTitle = document.createElement('p');
             let imgTag = document.createElement('img');
             let pDetails = document.createElement('p');
-            let aDetails = document.createElement('a');
+            let aDetails = document.createElement('p');
             let pBody = document.createElement('p');
             let pName = document.createElement('h4');
             let technology = document.createElement('span');
             let specSpace = document.createElement('p');
             let numString = idNum.toString();
+            aDetails.setAttribute('data-target', 'link-modal');
+            aDetails.setAttribute('data-toggle', 'modal');
             technology.setAttribute('class', 'tech');
             specSpace.setAttribute('id', numString);
             specSpace.setAttribute('class', 'spec-details');
-            aDetails.setAttribute('class', numString);
+            aDetails.setAttribute('class', 'more-details');
             parentDiv.setAttribute('class', 'col-12 content text-center');
             pName.setAttribute('class', 'projects-h4 font-weight-normal');
             pBody.setAttribute('class', 'pBody');
@@ -140,7 +142,7 @@ function populateData(type){
             pName.innerHTML = element.name;
             pBody.innerHTML = element.description;
             aDetails.innerHTML = 'View';
-            specSpace.innerHTML = 'technologies: ' + element.specs;
+            specSpace.innerHTML = element.specs;
     
             //assemble elements
             pDetails.prepend(technology);
@@ -178,6 +180,9 @@ $('#ec').on('click', () => {
 $('#ent').on('click', () => {
     console.log('clicked entertainment projects');
     populateData('ent');
+});
+$('.more-details').on('click', () => {
+    console.log('attempting to view');
 });
 
 function changeSection(path, catCode){
