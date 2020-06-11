@@ -5,10 +5,14 @@ let all = $('#all');
 let bs = $('#bs');
 let ent = $('#ent');
 let ec = $('#ec');
+let ext = $('#ext');
+let api = $('#api');
 let allT = '#all';
 let bsT = '#bs';
 let entT = '#ent';
 let ecT = '#ec';
+let extT = '#ext';
+let apiT = '#api';
 let idNum = 0;
 
 
@@ -31,25 +35,34 @@ $(toggleMobMenu).on('click', () => {
 });
 
 $(all).on('click', () => {
-    let classArr = [ bsT, entT, ecT];
+    let classArr = [ bsT, entT, ecT, apiT, extT];
     removeClass(all, classArr);
 });
 
 $(bs).on('click', () => {
-    let classArr = [ allT, entT, ecT];
+    let classArr = [ allT, entT, ecT, apiT, extT];
     removeClass(bs, classArr);
 });
 
 $(ent).on('click', () => {
-    let classArr = [ bsT, allT, ecT];
+    let classArr = [ bsT, allT, ecT, apiT, extT];
     removeClass(ent, classArr);
 });
 
 $(ec).on('click', () => {
-    let classArr = [ bsT, allT, entT];
+    let classArr = [ bsT, allT, entT, apiT, extT];
     removeClass(ec, classArr);
 });
 
+$(ext).on('click', () => {
+    let classArr = [ bsT, allT, entT, apiT, ecT ];
+    removeClass(ext, classArr);
+});
+
+$(api).on('click', () => {
+    let classArr = [ bsT, allT, entT, ecT, extT ];
+    removeClass(api, classArr);
+});
 
 
 /* jquery end */
@@ -65,15 +78,20 @@ function removeClass(id, arr){
     }
     changeCategories(id, arr);
 }
+
 function changeCategories(id, arr){
     id.addClass('stir');
-    changeUnusedCats(arr[0],arr[1],arr[2]);
+    changeUnusedCats(arr);
 };
 
-function changeUnusedCats(firstCat, secondCat, thirdCat){
-    $(`${firstCat}`).addClass('flush');
-    $(`${secondCat}`).addClass('flush');
-    $(`${thirdCat}`).addClass('flush');
+function changeUnusedCats(array){
+    array.forEach((elem, i) => {
+        let element = '' + elem + '';
+        $(element).addClass('flush');
+});
+    // $(`${firstCat}`).addClass('flush');
+    // $(`${secondCat}`).addClass('flush');
+    // $(`${thirdCat}`).addClass('flush');
 }
 
 
@@ -166,21 +184,24 @@ function populateData(type){
 };
 
 $('#bs').on('click', () => {
-    console.log('clicked business projects');
     populateData('bus');
 });
 $('#all').on('click', () => {
-    console.log('clicked all projects');
     populateData('');
 });
 $('#ec').on('click', () => {
-    console.log('clicked ecom projects');
     populateData('ecom');
 });
 $('#ent').on('click', () => {
-    console.log('clicked entertainment projects');
     populateData('ent');
 });
+$(extT).on('click', () => {
+    populateData('ext');
+});
+$(apiT).on('click', () => {
+    populateData('');
+});
+
 $('.more-details').on('click', () => {
     console.log('attempting to view');
 });
