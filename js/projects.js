@@ -82,6 +82,7 @@ function removeClass(id, arr){
 function changeCategories(id, arr){
     id.addClass('stir');
     changeUnusedCats(arr);
+    // changeTextColor(id, true);
 };
 
 function changeUnusedCats(array){
@@ -211,3 +212,11 @@ function changeSection(path, catCode){
         let snap = snapshot.val();
     });
 };
+
+function changeTextColor(id, isClicked){
+    if(isClicked){
+        id.css('color', 'white');
+    } else {
+        id.css('color', '#3B5998');
+    }
+}
