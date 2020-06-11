@@ -413,6 +413,12 @@ body, html {
 
 
 /* projects page */
+.no-current-projects {
+    text-align: center;
+    color: #3B5998;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: 2em;
+}
 #row-title {
     padding-top: 5.5em;
     background: linear-gradient(white,white, #DFE3EE);

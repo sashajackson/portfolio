@@ -116,14 +116,11 @@ function populateData(type){
         let typeArr = null;
         if(type === ''){
            typeArr = snap.filter(elem => elem.type);
+        } else if (type==='api'){
+            typeArr = ['none'];
         } else {
             typeArr = snap.filter(elem => elem.type === type);
         } 
-        // else if (type === 'ent'){
-        //     typeArr = snap.filter(elem => elem.type === 'ent');
-        // } else if (type === 'ecom'){
-        //     typeArr = snap.filter(elem => elem.type === 'bus');
-        // }
         projectsv.innerHTML = '';
         typeArr.forEach(element => {
             //create elements
@@ -156,28 +153,39 @@ function populateData(type){
             cardBody.setAttribute('class', 'card-body projects-card-body');
             cardTitle.setAttribute('class', 'card-title projects-card-title');
 
-            //insert text in elements
-            technology.innerHTML = 'technologies: ';
-            pName.innerHTML = element.name;
-            pBody.innerHTML = element.description;
-            aDetails.innerHTML = 'View';
-            specSpace.innerHTML = element.specs;
-    
-            //assemble elements
-            pDetails.prepend(technology);
-            pDetails.append(specSpace);
-            pDetails.append(aDetails);
-            cardBody.append(pDetails);
-            cardBody.prepend(cardTitle);
-            cardTitle.append(pName);
-            cardBody.append(pBody);
-            cardBody.append(pDetails);
-            // cardBody.prepend(imgTag);
-            cardDiv.append(cardBody);
-            parentDiv.append(cardDiv);
-            projects.append(parentDiv);
 
-            idNum++;
+            if(typeof typeArr[0] === 'string'){
+                console.log('api list');
+                let p = document.createElement('p');
+                p.classList.add('no-current-projects');
+                p.innerHTML = 'Nothing yet, check back later';
+                parentDiv.append(p);
+                projects.append(parentDiv);
+            } else {
+                //insert text in elements
+                technology.innerHTML = 'technologies used: ';
+                pName.innerHTML = element.name;
+                pBody.innerHTML = element.description;
+                aDetails.innerHTML = 'View';
+                specSpace.innerHTML = element.specs;
+        
+                //assemble elements
+                pDetails.prepend(technology);
+                pDetails.append(specSpace);
+                pDetails.append(aDetails);
+                cardBody.append(pDetails);
+                cardBody.prepend(cardTitle);
+                cardTitle.append(pName);
+                cardBody.append(pBody);
+                cardBody.append(pDetails);
+                // cardBody.prepend(imgTag);
+                cardDiv.append(cardBody);
+                parentDiv.append(cardDiv);
+                projects.append(parentDiv);
+    
+                idNum++;
+
+            }
         });
 
     });
@@ -200,7 +208,7 @@ $(extT).on('click', () => {
     populateData('ext');
 });
 $(apiT).on('click', () => {
-    populateData('');
+    populateData('api');
 });
 
 $('.more-details').on('click', () => {
