@@ -23,6 +23,17 @@ $(document).ready( () => {
             toggleBtnJQ.addClass('fad fa-caret-up');
         }
     });
+
+    //when social icons in navbar is clicked
+    $('.mediumb').on('click', () => {
+        window.location.href = "https://medium.com/@andremj013090";
+    });
+    $('.github').on('click', () => {
+        window.location.href = "https://www.github.com/andrejacksonnola";
+    });
+    $('.youtube').on('click', () => {
+        window.location.href = "https://www.youtube.com/watch?v=lGQH87I7RPk&t=167s";
+    });
     
     // when mystary message is clicked
     $('.col-spacer-row2').on('click', () => {

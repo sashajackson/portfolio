@@ -166,7 +166,7 @@ function populateData(type){
                 technology.innerHTML = 'technologies used: ';
                 pName.innerHTML = element.name;
                 pBody.innerHTML = element.description;
-                aDetails.innerHTML = 'View';
+                // aDetails.innerHTML = 'View';
                 specSpace.innerHTML = element.specs;
         
                 //assemble elements

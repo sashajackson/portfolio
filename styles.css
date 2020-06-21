@@ -13,6 +13,21 @@ body, html {
     background: #3B5998;
 }
 
+.btn-message {
+    background: #3B5998;
+    color: white;
+}
+
+.btn-close {
+    background: #8B9DC3;
+    color: #3B5998;
+    color: white;
+}
+
+.modal-title {
+    color: #6c757d;
+}
+
 .navbar-brand {
     font-size: 20px;
     color: white;
@@ -53,7 +68,7 @@ body, html {
     border: 1px solid mediumspringgreen;
 }
 
-.navbar-brand, .nav-link, .searchBtn, .alert, .card, .skills-title, .js-skill, .mm-title, .contact-card, .css-change {
+ .nav-link, .searchBtn, .alert, .card, .skills-title, .js-skill, .mm-title, .contact-card, .css-change {
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
@@ -253,6 +268,10 @@ body, html {
     font-size: 20px;
 }
 
+#social-icon:hover {
+    cursor: grab;
+}
+
 #social-icon-contact {
     color: #8B9DC3;
     padding: 0 5px 0 5px;
@@ -340,9 +359,12 @@ body, html {
         margin-top: 3.4em;
     }
 
-    #social-icon {
-        padding: 0;
-        margin: 0;
+    .social-icons-nav {
+        text-align: left;
+    }
+
+    .mediumb {
+        padding-left: 0 !important;
     }
     
     .ig {
@@ -383,6 +405,7 @@ body, html {
 
     #social-icon {
         padding: 0 0 0 10px;
+        text-align: left !important;
     }
 
     /* .footer-row {
@@ -420,7 +443,7 @@ body, html {
     margin-top: 2em;
 }
 #row-title {
-    padding-top: 5.5em;
+    padding-top: 5em;
     background: linear-gradient(white,white, #DFE3EE);
 }
 
@@ -518,7 +541,7 @@ body, html {
 
 /* blogs page */
 #title-row {
-    padding-top: 5.5em;
+    padding-top: 5em;
 }
 
 @media (min-width: 300px){
@@ -536,4 +559,75 @@ body, html {
         margin-bottom: 5px;
     }
 }
+
+/* about page */
+#about-main-container {
+    margin-top: 3.5em;
+    padding: 5em 2em 1em 2em;
+    background: #F7F7F7;
+}
+
+
+.about-hr {
+    width: 100%;
+    background: #3B5998;
+    margin-top: 0;
+}
+
+.img {
+    height: 250px;
+}
+
+#main-container-col1 {
+    border: 1px solid #6c757d;
+    padding: 20px 20px 0 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px -5px;
+    background: url('./images/pinkclouds.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background: white;
+}
+
+.about-li {
+    list-style-type: none;
+    color: #8B9DC3;
+}
+
+.about-ul {
+    padding-left: 0;
+}
+
+#about-row {
+    margin-top: 2.5em;
+}
+
+.card1 {
+    box-shadow: 0 10px 10px -5px silver;
+}
+
+.card2 {
+    box-shadow: 0 10px 10px -5px silver;
+}
+
+.about-card-title {
+    color: #3B5998;
+}
+
+.about-bio-card {
+    box-shadow: 0 10px 10px -5px silver;
+}
+
+@media (min-width: 300px){
+    .card1, .card2 {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+@media (min-width: 400px){
+    /* .card1, .card2 {
+        padding: 5px;
+    } */
+}
+
 

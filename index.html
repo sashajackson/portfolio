@@ -22,9 +22,9 @@
 
         <!-- nav -->
         <nav class="navbar navbar-expand-lg fixed-top">
-            <a class="navbar-brand" href="#">Andre Jackson</a>
-            <div class="text-center">
-                <i class="fab fa-instagram" id="social-icon"></i> <i class="fab fa-medium-m icon" id="social-icon"></i><i class="fab fa-github icon" id="social-icon"></i> <i class="fab fa-youtube icon" id="social-icon"></i>
+            <a class="navbar-brand mr-0" href="#">Andre Jackson</a>
+            <div class="social-icons-nav">
+               <i class="fab fa-medium-m icon mediumb ml-0" id="social-icon"></i> <i class="fab fa-github icon github" id="social-icon"></i> <i class="fab fa-youtube icon youtube" id="social-icon"></i>
             </div>
             <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="caret-btn">
               <!-- <span class="navbar-toggler-icon"></span> -->
@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">About Me <i class="fal fa-id-card" id="navbar-icon"></i></a>
+                  <a class="nav-link" href="/pages/about.html">About Me <i class="fal fa-id-card" id="navbar-icon"></i></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/projects.html">Projects <i class="fal fa-project-diagram" id="navbar-icon"></i></a>
@@ -45,9 +45,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Resume <i class="fal fa-file-alt" id="navbar-icon"></i></a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#">Community Service <i class="fal fa-users" id="navbar-icon"></i></a>
-                </li>
+                </li> -->
                 <!-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown
@@ -205,10 +205,10 @@
                         <p class="font-weight-bold card-title contact-title text-center c-paragraph bs-title mb-0 mt-0">Andre M. Jackson</p>
                         <p class="card-text text-center pt-0"><medium class="se-text">Software Engineer</medium></p>
                         <p class="c-paragraph mb-0 css-change text-center"><i class="fad fa-envelope"></i> drejaxthedev@gmail.com</p>
-                        <p class="contact-title contact-form c-paragraph mt-0 css-change text-center"><i class="fad fa-paper-plane"></i> contact</p>
+                        <p data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" class="contact-title contact-form c-paragraph mt-0 css-change text-center"><i class="fad fa-paper-plane"></i> contact me</p>
                         <div class="text-center">
                             <p class="c-paragraph text-center css-change mb-0" id="quote">"I think, therefore I am" - René Descartes</p>
-                            <i class="fab fa-instagram" id="social-icon-contact"></i> <i class="fab fa-medium-m" id="social-icon-contact"></i> <i class="fab fa-linkedin-in" id="social-icon-contact"></i> <i class="fab fa-github" id="social-icon-contact"></i>
+                           <i class="fab fa-medium-m" id="social-icon-contact"></i> <i class="fab fa-github" id="social-icon-contact"></i> <i class="fab fa-youtube icon youtube" id="social-icon-contact"></i>
                         </div>
                     </div>
                 </div>
@@ -221,7 +221,7 @@
                                     <div class="row footer-row">
                     <div class="col-12 p-0">
                         <div class="alert footer-box text-center font-weight-bold" role="alert">
-                            Check out my <a href="#" class="blogs">Medium Blogs</a>
+                            Check out my <a href="https://medium.com/@andremj013090" class="blogs pl-1">Medium Blogs</a>
                           </div>
                     </div>
                 </div>
@@ -272,6 +272,39 @@
                       </div>
                 </div>
             </div> -->
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Name/Company:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                          <label for="message-text" class="col-form-label">Message:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-contact" class="col-form-label">email:</label>
+                            <input type="text" class="form-control" id="recipient-contact">
+                          </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-message">Send message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
