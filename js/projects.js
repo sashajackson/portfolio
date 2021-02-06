@@ -119,6 +119,8 @@ function populateData(type){
            typeArr = snap.filter(elem => elem.type);
         } else if (type==='api'){
             typeArr = ['none'];
+        }else if(type === 'nj'){
+            typeArr = ['none'];
         } else {
             typeArr = snap.filter(elem => elem.type === type);
         } 
@@ -133,7 +135,7 @@ function populateData(type){
             let pDetails = document.createElement('p');
             let aDetails = document.createElement('p');
             let pBody = document.createElement('p');
-            let pName = document.createElement('h4');
+            let pName = document.createElement('a');
             let technology = document.createElement('span');
             let specSpace = document.createElement('p');
             let numString = idNum.toString();
@@ -145,6 +147,7 @@ function populateData(type){
             aDetails.setAttribute('class', 'more-details');
             parentDiv.setAttribute('class', 'col-12 content text-center');
             pName.setAttribute('class', 'projects-h4 font-weight-normal');
+            pName.setAttribute('href', `${element.url}`)
             pBody.setAttribute('class', 'pBody');
             imgTag.setAttribute('src', '/images/trp.png');
             aDetails.setAttribute('href', '#');
@@ -194,6 +197,11 @@ function populateData(type){
 };
 
 $('#bs').on('click', () => {
+    console.log('about to populate data')
+    populateData('bus');
+});
+$('#nj').on('click', () => {
+    console.log('about to populate data for nodejs')
     populateData('bus');
 });
 $('#all').on('click', () => {
