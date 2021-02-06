@@ -105,7 +105,7 @@ function changeUnusedCats(array){
 
 
 /* firebase events & fns */
-let referenceEnt = firebase.database().ref('project-list/cat-01/ent');
+let referenceEnt = firebase.database().ref('project-list/cat-01/ent2');
 populateData('');
 
 function populateData(type){
@@ -115,6 +115,7 @@ function populateData(type){
         let projectsv = document.getElementById('projects-content-row');
         let typeArr = null;
         if(type === ''){
+            console.log(snap);
            typeArr = snap.filter(elem => elem.type);
         } else if (type==='api'){
             typeArr = ['none'];

@@ -99,13 +99,13 @@ function populateData(typeBlog){
                 let cardTitle = document.createElement('p');
                 let imgTag = document.createElement('img');
                 let pDetails = document.createElement('p');
-                let aDetails = document.createElement('p');
+                let aDetails = document.createElement('a');
                 let pBody = document.createElement('p');
                 let pName = document.createElement('h4');
                 let technology = document.createElement('span');
                 let exerpt = document.createElement('p');
-                aDetails.setAttribute('data-target', 'link-modal');
-                aDetails.setAttribute('data-toggle', 'modal');
+                // aDetails.setAttribute('data-target', 'link-modal');
+                // aDetails.setAttribute('data-toggle', 'modal');
                 technology.setAttribute('class', 'tech');
                 exerpt.setAttribute('class', 'spec-details');
                 aDetails.setAttribute('class', 'more-details');
@@ -113,7 +113,8 @@ function populateData(typeBlog){
                 pName.setAttribute('class', 'projects-h4 font-weight-normal');
                 pBody.setAttribute('class', 'pBody');
                 imgTag.setAttribute('src', '/images/trp.png');
-                aDetails.setAttribute('href', '#');
+                console.log(element.url);
+                aDetails.setAttribute('href', `${element.url}`);
                 pDetails.setAttribute('class', 'p-text');
                 imgTag.setAttribute('class', 'img-fluid project-image');
                 cardDiv.setAttribute('class', 'card projects-card');
