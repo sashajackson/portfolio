@@ -150,7 +150,7 @@ $(document).ready( () => {
     
       //fns to automatically post day, time and weather
       function grabInfo(){
-        $.getJSON("http://api.openweathermap.org/data/2.5/weather?id=4335045&appid=4c0c0abe0793b6f569c03a4fa14ff282&units=metric", (json) => {
+        $.getJSON("https://api.openweathermap.org/data/2.5/weather?id=4335045&appid=4c0c0abe0793b6f569c03a4fa14ff282&units=metric", (json) => {
             let wthr = JSON.stringify(json, null, 2);
             let weather = JSON.parse(wthr);
             let getFahrenheit = (weather.main.temp * 1.8) + 32;
